@@ -1,0 +1,50 @@
+ *{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.body {
+    border: 5px black;
+    border-style: double; 
+} 
+#div2 {
+   text-align: center;
+   text-transform: uppercase;
+   line-height: 15px;
+ 
+}
+span{
+    font-size: xx-large;
+    
+}
+
+.container{
+    text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+li{
+    display: inline-block;
+    text-decoration: none;
+    
+}
+a{
+    text-decoration: none;
+    padding: 25px;
+
+}
+
+li :hover {
+    color: rgb(236, 186, 186)  ;
+}
+ul{
+    border-top: 3px solid black;
+    border-bottom: 2px solid rgb(139, 132, 132);
+    padding: 10px;
+}
+
+div p {
+text-transform: capitalize;
+text-align: justify;
+} 

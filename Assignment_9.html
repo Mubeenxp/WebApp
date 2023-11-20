@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        .fi {
+            border: 1px solid blue;
+        }
+
+        #sib {
+            margin-left: 35px;
+            border-radius: 20px 1px;
+        }
+
+        .aa {
+            text-align: left 35px;
+        }
+        #city
+        {
+            color: aliceblue;
+    </style>
+
+</head>
+
+<body>
+    <a href="index.html"> Go to index</a> <br> <br>
+
+     <fieldset   style="width: 50%; margin-left: 20px; "> <legend> Login details</legend>
+    <form action="" style=" margin-left: 50px;">
+        <label for="name">Name:</label>
+        <input   ="name" type="text" name="name"/> <br>
+        <label for="em">Email:</label>
+        <input id="em" type="email" name="email"/><br>
+        <label for="ps">password:</label>
+        <input id="ps" type="password" name="password"/>
+
+    </form>
+</fieldset>
+
+<fieldset  style="width: 50%; margin-left: 20px;" "> <legend > Your feeeback</legend>
+   <form action="" style=" margin-left: 50px;"> 
+    <p>please check all the emotions that apply to you:</p>
+    <label for="A">Angry</label>
+    <input id="A" type="checkbox" name="emo" value="angry"> <br>
+    <label for="B">Sad</label>
+    <input id="B" type="checkbox" name="emo" value="angry"> <br>
+    <label for="C">Happy</label>
+    <input id="C" type="checkbox" name="emo" value="angry"> <br>
+    <label for="D">Ambivalent</label>
+    <input id="D" type="checkbox" name="emo" value="angry">
+    <p>How satisfed wer yo with our service?</p>
+    
+    <label for="very">Very satisfied</label>
+    <input id="very" type="radio" name="ver" value="very">
+
+</form>
+</fieldset >
+
+
+<br><br>
+Muhammad Mubeen Attari||116698||Faizan e Madina karachi
+
+    <br><br><br><br>
+
+
+
+
+
+  <fieldset  class="fi" style="width: 80%; margin-left: 40px; ">
+    <legend> the first section</legend>
+        <fieldset class="fi" style=" margin-left: 1px;">
+            <legend> <label for="f1"> The First Subsecition </label></legend>    
+
+                <label for="f1" style=" font-size: small;">field1</label> 
+                <input id="f1" type="email" name="sub" size="56">
+        </fieldset>
+        <br>
+            <label for="f2" style=" font-size: small; ">field1</label>
+            <input id="f2" type="email"name="sub" size="50">
+
+</fieldset>
+
+<fieldset class="fi" style="width: 80%; margin-left: 40px; ">
+    <legend> Section || </legend>
+        <fieldset class="fi" style=" margin-left: 1px; ">
+            <legend> <label for="f3">Section ||-A </label></legend>            
+                <label for="f3" style=" font-size: small; ">field1</label>
+                <input id="f3" type="email" name="sub" size="50">
+        </fieldset>
+        <br>
+            <fieldset class="fi" style=" margin-left: 1px; "> 
+                <legend> <label  for="f4">Section ||-B </label> </legend>  
+            <label for="f4" style=" font-size: small;">field1</label>
+            <input id="f4" type="email"name="sub" size="50">
+        </fieldset>
+</fieldset>
+<br>
+<button id="sib" type="button" name="submit"value ="sub">Go!Go!Go!</button> 
+
+    <br><br><br><br><br><br>
+    <table id="city" border="0px" style="background-color: rgb(107, 90, 205);">
+
+
+        <tr>
+            <th colspan="2"><label for="fn">FIRST NAME</label></th>
+            <td width="50px"></td>
+            <td><input id="fn" type="text" name="fname"></td>
+            <td><label for="fn">(max 30 characters a-z and A-Z)</label></td>
+
+        </tr>
+        <tr>
+            <th colspan="2"><label for="ln">LAST NAME</label></th>
+            <td></td>
+            <td><input id="ln" type="text" name="fname"></td>
+            <td><label for="ln">(max 30 characters a-z and A-Z)</label></td>
+
+        </tr>
+        <tr>
+            <th colspan="2"><label for="dt">DATE OF BIRTH</label></th>
+            <td></td>
+            <td><select name="Day" id="dt">
+                    <option value="day">Day</option>
+                    <option value="day">1</option>
+                    <option value="day">2</option>
+                </select>
+
+                <select name="Day" id="dt">
+                    <option value="day">Month</option>
+                    <option value="day">Jun</option>
+                    <option value="day">Fub</option>
+                </select>
+                <select name="Day" id="dt">
+                    <option value="Year">Year</option>
+                    <option value="Year">2024</option>
+                    <option value="Year">2023</option>
+                </select>
+            </td>
+
+        </tr>
+        <tr>
+            <th colspan="2"> <label for="eeum">EMAIL ID</label></th>
+            <td></td>
+            <td><input id="eeum" type="email" name="mail"></td>
+        </tr>
+        <tr>
+            <th colspan="2"><label for="num">MOBILE NUMBER</label></th>
+            <td></td>
+            <td><input id="num" type="number" name="ph" value="ph"></td>
+            <td>(10 digit number)</td>
+        </tr>
+        <tr>
+            <th colspan="2">GENDER</th>
+            <td></td>
+            <td> <label for="mg">Maile</label><input type="radio" name="gender" id="mg">
+                <label for="fg">Fmaile</label><input type="radio" name="gender" id="fg">
+
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2"> <label for="ADDR">ADDRESS</label></th>
+            <td></td>
+            <td> <textarea name="comments" id="ADDR" cols="20" rows="10"></textarea></td>
+        </tr>
+        <tr>
+            <th colspan="2"> <label for="ty">CITY</label></th>
+            <td></td>
+            <td><input id="ty" type="text" name=""></td>
+            <td><label for="city">(max 30 characters a-z and A-Z)</label></td>
+        </tr>
+        <tr>
+            <th colspan="2"> <label for="pin">PIN CODE</label> </th>
+            <td></td>
+            <td><input id="pin" type="number" name="pin"></td>
+            <td><label for="pin">(max 30 characters a-z and A-Z)</label></td>
+        </tr>
+        <tr>
+            <th colspan="2"><label for="state">STATE</label></th>
+            <TD></TD>
+            <TD> <input id="state" type="text" name="state"> </TD>
+            <td><label for="state">(6 digit number)</label></td>
+        </tr>
+        <tr>
+            <th colspan="2"> <label for="contry"> COUNTRY </label></th>
+            <td></td>
+            <td> <input id="contry" type="text" name="con"> </td>
+            <td><label for="contry">(max 30 characters a-z and A-Z)</label></td>
+        </tr>
+
+        <tr>
+            <th colspan="2"><label for="hob">HOBBIES</label> </th>
+            <td></td>
+
+            <td> <input id="dat" type="checkbox" name="hob">
+                <label for="dat"> Drawing</label>
+                <input id="pro" type="checkbox" name="hob">
+                <label for="pro"> Naat</label>
+                <br>
+                <input id="bi" type="checkbox" name="hob">
+                <label for="bi"> power bi</label>
+                <input id="oth" type="checkbox" name="hob">
+                <label for="oth"> Others</label> <br>
+                <input type="text" size="10">
+            </td>
+
+        </tr>
+       <tr>
+        <th colspan="2"> QUALIFICATION</th>
+        <th></th>
+        <th colspan="2"><table border="1px" style="border-collapse: collapse;" >
+
+          
+    
+                    
+                        <tr>
+                            <th>Sr No.</th>
+                            <th>Examination</th>
+                            <th>Board</th>
+                            <th>Percentage</th>
+                            <th>Year of Passing</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Class X</th>
+                            <td bgcolor="aliceblue"></td>
+                            <td bgcolor="aliceblue"></td>
+                            <td bgcolor="aliceblue"></td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Class XII</th>
+                            <td bgcolor="aliceblue"></td>
+                            <td bgcolor="aliceblue"></td>
+                            <td bgcolor="aliceblue"></td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Graduation</th>
+                            <td bgcolor="aliceblue"></td>
+                            <td bgcolor="aliceblue"></td>
+                            <td bgcolor="aliceblue"></td>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>Masters</th>
+                            <td bgcolor="aliceblue"></td>
+                            <td bgcolor="aliceblue"></td>
+                            <td bgcolor="aliceblue"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <td>(10 char max)</td>
+                            <td>(upto 2 decimal)</td>
+                            <td></td>
+                        </tr>
+                
+        </table>
+       
+        <tr>
+            <th colspan="2"> COURSES <br> APPLIED FOR</th>
+            <td></td>
+            <th><label for="abc">BCA</label>
+            <input id="abc" type="radio"name="abc">
+
+            <label for="b.">B.com</label>
+            <input id="b." type="radio"name="abc">
+
+            <label for="bsc">B.sc</label>
+            <input id="bsc" type="radio"name="abc">
+
+            <label for="ba">B.A</label>
+            <input id="ba" type="radio"name="abc"></th>
+           </tr>
+       <tr>
+         <td style="text-align: center;" colspan="5"> <input type="submit" naem ="submit"> <input type="reset" name="reset"></td>
+       </tr>
+      
+    
+    </table>
+   
+
+ 
+
+   
+</body>
+
+</html>

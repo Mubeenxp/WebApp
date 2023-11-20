@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul{
+    display: flex;
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+
+}
+ul li{
+    margin: 10px;
+    padding: 5px; 
+}
+a{
+    text-decoration: none;
+}
+
+nav{
+    /* border: 1px solid black; */
+    background: rgb(245, 245, 245);
+    width: 80%;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+    
+
+}
+header{
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid rgb(228, 213, 213);
+     transform-origin: bottom right;
+    transform: skew(20deg, 0);
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 45%;
+  
+
+}
+.box1{
+    border: 1px solid rgb(248, 239, 239);
+    margin: 10px 0px 10px 0px;
+}
+.box1.bar{
+align-self: center;
+margin-right: 80px;
+width: 50px;
+font-size: 30px;
+}
+
+.parallelogram {
+
+  width: 40%;
+  height: 80px;
+  border: 1xp solid rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+ /* transform-origin: top left; */
+   transform: skew(15deg, 0deg);
+  margin: 10px 0px 20px 8px;
+}
+.parallelogram  img{
+    text-align: center;
+    margin: 25px;
+}
+.benar{
+    background-image:url(./imge.jfif);
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 80%;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: azure;
+   text-transform: capitalize;
+}
+h3{
+    margin-top: 25px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+button{
+    width: 120px;
+    margin-top: 50px;
+    height: 50px;
+    background: rgb(24, 195, 186);
+    border: none;
+    color: white;
+    border-radius: 5px;

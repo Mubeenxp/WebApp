@@ -1,0 +1,55 @@
+ div{
+    border: 1px solid lightgrey;
+   max-width: 25%;
+    margin-top: 25px;
+    margin-right: 25%;
+    margin-left: 25%;
+    
+    background-color: #25d366;
+   
+} 
+table {
+    /* border: 1px solid skyblue; */
+    text-align: center;
+    margin: 25px auto;
+}
+td {
+    border: 1px solid white;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+  
+}
+h1{
+    color: white;
+    font-size: larger;
+    
+    
+}
+td:hover{
+    background-color: rgb(209, 240, 209);
+  
+    
+}
+a:hover {
+    color: black;
+    text-shadow: 5px;
+}
+#div2{
+    border: 1px solid black;
+    width: 50%;
+    height: 25%;
+    display: inline;
+    float: left;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+}

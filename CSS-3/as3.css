@@ -1,0 +1,220 @@
+
+.div1 {
+    max-width: 70%;
+    height: 30px;
+    border: 1px solid lightblue;
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 25px;
+    color: rgb(97, 132, 64);
+}
+
+.box1{
+    width: 19.5%;
+    height: 300px;
+    border: 1px solid lightblue;
+    margin-left: 15%;
+    margin-top: 5px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 25px;
+    color: rgb(97, 132, 64);
+
+}
+
+.box2{
+    width: 30%;
+    height: 300px;
+    border: 1px solid lightblue;
+    margin-top: 5px;
+    float: left;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 25px;
+    color: rgb(97, 132, 64);
+ 
+}
+
+.box3{
+    width: 19.5%;
+    height: 300px;
+    border: 1px solid lightblue;
+    margin-left: 5px;
+    margin-top: 5px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 25px;
+    color: rgb(97, 132, 64);
+   
+}
+
+
+
+.box4{
+    width: 70%;
+    height: 50px;
+    border: 1px solid lightblue;
+    margin: auto;
+    margin-top: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 25px;
+    color: rgb(97, 132, 64);
+
+} 
+
+                                                /* assingment3-1 */
+.div10{
+    border: 2px solid black;
+    background-color:rgb(181, 230, 27) ;
+    width: 75%;
+    height: 580px;
+    margin: auto;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+
+ 
+.div5{
+    background-color:rgb(35, 177, 77);
+    border: 2px solid black;
+    width: 98%;
+    height: 80px;
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.div6{
+    background-color: rgb(155, 220, 236);
+    border: 2px solid black;
+    width: 98%;
+    height: 80px;
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.div7{
+    background-color: rgb(63, 71, 204);
+    border: 2px solid black;
+    width: 31.0%;
+    height: 300px;
+    margin: auto;
+    margin-left: 1%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    
+   
+}   
+.div8{
+    background-color:rgb(163, 73, 163);
+    border: 2px solid black;
+    width: 64%;
+    height: 300px;
+    margin-left: 34.5%;
+    margin-top: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+    
+    
+   
+} 
+.div9{
+    background-color:rgb(253, 128, 38);
+    border: 2px solid black;
+    width: 98%;
+    height: 80px;
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+   
+}
+
+                                                    /* assingment3-1 */
+.div11{
+    border: 1px solid black;
+    width: 75%;
+    height:750px;
+    margin: auto;
+}
+.div12{
+    
+    border: 1px solid black;
+    width: 100%;
+    height: 50px;
+    
+   
+    
+}
+.div13{
+    
+    border: 1px solid black;
+    background-color:rgb(235, 154, 153);
+    width: 30%;
+    height: 150px;
+    margin-left: 2%;
+    margin-top: 25px;
+    float: left;
+   
+    
+}
+.div14{
+    
+    border: 1px solid black;
+    background-color: rgb(160, 197, 249);
+    width: 60.5%;
+    height: 150px;
+    margin: auto;
+    margin-left: 35.5%;
+    margin-top: 25px;
+   
+    
+}
+.div16{
+    
+    border: 1px solid black;
+    background-color: rgb(255, 229, 154);
+    width: 94%;
+    height: 100px;
+    margin-left: 2%;
+    margin-top: 25px;
+    
+   
+    
+}

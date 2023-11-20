@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        .wb
+        {
+            text-align: left;
+            border: 1px solid black; 
+        }
+        .in 
+        {
+            
+            border: 1px solid black; width: 100px;padding: 2px;
+        }
+        #tab
+        {
+            border: 1px solid black;
+  border-collapse: collapse;
+        }
+       
+    </style>
+
+
+</head>
+<body>
+    <a href="index.html"> Go to index</a> <br> <br>
+    <form action="">
+      <center> 
+     <div style="background-color: #e0b68c;width: 400px;padding: 5px;">
+        <h3><i> KM Custom HTML Form Example Using AppleScript<br></i></h3>
+        <p>By Muhammad Mubeen Attari 116698</p>
+    <table id="tab">
+        <tr>
+            <th class="wb"> <label for="name">Name:</label></th>
+            <td class="in"><input id="name" placeholder="entr Your name" type="name"></td>
+        </tr>
+        <tr>
+            <th class="wb"><label for="Email">Email:</label></th>
+            <td class="in"><input id="Email" placeholder="entr Your Email" type="email" name="email"></td>
+        </tr>
+        <tr>
+            <th class="wb"><label for="pss">passwrd:</label></th>
+            <td class="in"><input id="pss" type="password" name="password" maxlength="8"></td>
+        </tr>
+        <tr>
+            <td class="wb"><label for="box"><b>Approval Required:</b> <br> Click on th button or text to <br> Check/uncheck.</label> </td>
+            <td class="in"> <input id="app" type="checkbox" name="box"> <label for="app"> Doyou approve?</label></td>
+        </tr>
+        <tr>
+            <td class="wb"> <b>Pick Your Favorite:</b> <br>Click on th button or text to <br> select. </td>
+            <td class="in"><input id="A" type="radio" name="radio"><label for="A">Choice A</label><br>
+            <input id="B" type="radio" name="radio"><label for="B">Choice B</label><br>
+            <input id="C" type="radio" name="radio"><label for="C">Choice C</label></td>
+        </tr>
+        <tr>
+            <td class="wb"><b>Popup Menu:</b></td>
+            <td class="in">
+            <select name="aera" id="">
+                <option value="M">Malir--ML</option>
+                <option value="K">Korangi--KG</option>
+                <option value="O">Orangi--OG</option>
+            </select> 
+            </td>
+        </tr>
+        <tr>
+            <td class="wb"><b>List</b><br>Setup Options:
+                <ul>
+                    <li>Number Of rows to display</li>
+                    <li>Allow Multi-select</li> 
+                </ul>
+            </td>
+            <td class="in">
+                <select name="City" id="" multiple>
+                    <option value="KHI">karachi--KHi</option>
+                    <option value="LHI">Lahor--LHI</option>
+                    <option value="MLT">Multan--MLT</option>
+                    <option value="MLT">Fasilabad--FSl</option>
+                    <option value="MLT">Hadrabad--HAD</option>
+                    <option value="MLT">Islamabad--IST</option>
+                    
+                </select> 
+            </td>
+        </tr>
+
+        <tr>
+            <td class="wb"><b> <label for="nm">Field Ignored by KM</label></b></td>
+            <td class="in"><input id="nm" placeholder="entr Your no" type="number"></td>
+        </tr>
+        <tr>
+            <td class="wb"><b><label for="text">Text Area</label></b></td>
+            <td class="in"><textarea cols="20" rows="5" > </textarea></td>
+        </tr>
+ 
+    </table>
+    <br>
+    <input type="submit" name="sub" value="Save" style="background-color: blue; color: white; border: 2px solid lightskyblue; border-radius: 80px ;padding: 5px;width: 15%;font-size: small;">
+    <input type="reset" name="sub" value="Cancel"   style="border: 2px solid blue;border-radius: 80px ;padding: 5px;width: 15%;font-size: small;">
+    <input type="reset" name="sub" value="Resize" style="background-color: lightgray; border: 2px solid black; border-radius: 80px ;padding: 5px;width: 15%;font-size: small;">
+</div> </center>
+</form>
+
+<br><br><br><br><br><br><br><br><br>
+<center>
+<table border="1px" style=" border-spacing: 5px;">
+
+    <thead>
+        <tr>
+           <td colspan = "4">UET UNIVERSITY</td>
+        </tr>
+     </thead>
+    
+     <TR>
+        <TD colspan="4" style="background-color: grey;"> <b>information technology students</b></TD>
+     </TR>
+     <tr>
+        <td rowspan="2">students</td>
+        <td colspan="3">WEB-DESIGN ASSIGNMENTS</td>
+       
+     </tr>
+     <TR>
+        <td>Assignment1</td>
+        <td>Assignment2</td>
+        <td>Assignment3</td>
+     </TR>
+     <tr>
+        <td>student_1</td>
+        <td>YES</td>
+        <td colspan="2">NO</td>
+     </tr>
+     <tr>
+        <td>student_2</td>
+        <td>NO</td>
+        <td>YES</td>
+        <td>NO</td>
+     </tr>
+
+     <TR>
+        <TD colspan="4" style="background-color: grey;"> <b>information Economics students</b></TD>
+     </TR>
+     <tr>
+        <td>student_1</td>
+        <td colspan="2">NO</td>
+        <td>YES</td>
+     </tr>
+    
+</table>
+
+</center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+

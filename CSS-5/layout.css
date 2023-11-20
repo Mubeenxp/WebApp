@@ -1,0 +1,101 @@
+*{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1vw;
+    
+}
+
+#logo{
+    border: 1px solid black;
+    border-top-width : 2px ; border-left-width: 2px;
+    width: 25%;
+    height: 50px;
+    float: left;
+    text-align: center;
+    padding-top: 0.5em;
+    box-sizing: border-box;
+    
+ 
+  
+    
+}
+#Banner{
+    border: 1px solid black;
+    border-top-width : 2px ; border-right-width: 2px;
+    width: 75%;
+    height: 50px;
+    float: left;
+    text-align: center;
+    padding-top: 0.5em;
+    box-sizing: border-box;
+ 
+}
+header{
+    border: 1px solid black;
+    border-bottom-width : 2px ;border-left-width: 2px; border-right-width: 2px;
+    width: 100%;
+    height: 50px;
+    float: left;
+    text-align: center;
+    padding-top: 0.5em;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.Left_B{
+    border: 1px solid black;
+    border-top-width : 2px ; border-left-width: 2px;border-bottom-width : 2px ;
+    width: 20%;
+    height: 500px;
+    float: left;
+     text-align: center;
+    padding-top: 1.0em;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+   
+}
+section{
+    border: 1px solid black;
+   border-top-width: 2px;
+    width: 59.6%;
+    height: 100px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    padding-top: 1.0em;
+    box-sizing: border-box;
+}
+span{
+    border: 1px solid black;
+    border-bottom-width : 2px;
+    width: 29.8%;
+    height: 300px;
+    float: left;
+    text-align: center;
+    line-height: 250px;
+    padding-top: 1.0em;
+    box-sizing: border-box;
+}
+.Left_BR{
+    border: 1px solid black;
+    border-top-width : 2px ;border-right-width: 2px ;border-bottom-width : 2px;
+    width: 20.3%;
+    height: 500px;
+    float: right;
+    text-align: center;
+    padding-top: 1.0em;
+    box-sizing: border-box;
+    position: absolute;
+    right: 6px;
+    top: 128px;
+}
+footer{
+    border: 2px solid black;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 1.0em;
+   clear: both;
+} 
+#bb{
+    
+border-bottom-width : 2px;
+border-top: none;
+}

@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+ul li{
+     display: inline-block;
+     margin: 5px;
+     padding: 5px;
+}
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+}
+a:hover{
+    color: green;
+}
+
+
+
+.icenter{
+   
+    align-self: center;  
+}
+
+.bgbutan{
+    background-color: rgb(102, 144, 54);
+    border: none;
+    height: 50px;
+    font-size: large;
+
+}
+.bgbutan:hover{
+    background-color: rgb(139, 195, 74);
+}
+.box1{
+     height: 150px;
+    background-color: black;
+    color: white;
+    font-size: small;
+
+}
+.box2{
+    height: 80px;
+    background-color: rgba(163, 170, 144, 0.384);
+    border: none;
+    text-transform: capitalize;
+    
+    
+}
+i{
+    color:rgb(139, 195, 74);
+}
+button i{
+    color: white;
+}
+.fa-star{
+    color: black;
+}
+
+
+.sec-five{
+    width: 100%;
+    background-color: #F8F6F3;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.btn btn-primary{
+    background-color: rgb(139, 195, 74);
+}
+a i{
+    color: white;
+}
+.leaf{
+    position: absolute;
+    left: 40%;
+margin-bottom: 5;
+    z-index: 1;
+
+    
+}

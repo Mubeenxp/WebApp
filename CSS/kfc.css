@@ -1,0 +1,33 @@
+#div{
+    width: 100%;
+    height: auto;
+}
+
+
+.div2{
+    
+border-bottom: 1px lightgray;
+border-style: outset;
+width: inherit; 
+height: auto;
+text-align: justify;
+margin-top: 5px;
+padding: 5px;
+
+}
+
+
+
+img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding-right: 15px;
+    
+    
+}
+
+span {
+    color: red;
+    
+}
