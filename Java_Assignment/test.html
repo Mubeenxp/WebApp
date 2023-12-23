@@ -1,469 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
-    
+
     <script>
 
-        var arry=[1,2,3,4,5,6,7,8,9,10]
-
-        var sum=0
-       for(var i=0;i<arry .length;i++){
-
-           sum += arry[i]
-        
-        document.write(sum)
-        document.write("<br>")
-        
-       } 
-
 
-      var arr=[1];
-      var sum1=0;
-      for (let index = 1; index < sum; index++) {
-        arr[index]= index;
-        
-      
-        document.write(arr[index] );
-       
-      }
-      document.write( arr.length % 5
-      
-      );
-
-
-
-
-//        var arr = [2,4,6,8,10,12];
-// var sum = 0;
-
-// for(var i = 0; i < arr.length; i++){
-//   sum += arr[i];
-// }
-// document.write("<br> Sum of first array: " + sum + "<br>");
 
-// var newArr = [];
-// for(var j=0; j < sum; j++){
-// newArr[j] = j;
 
-// document.write(newArr[j] + ", ");
-// }
-  
-// document.write("<br> Modulus is: " + newArr.length%5);
-      
+        // function fullName(fisrtName){
 
+        //     if (fisrtName==="") {
 
-    //    var arr =["A","B","C","D","E","F"]
+        //          console.log("enter user name");
+        //          return;
+        //     }  
+        //      return fisrtName
 
-    //    for(var a=0; a<5;a++){
-    //     for(var b=0;b<a;b++){
-    //         document.writeln(arr[b])
-    //     }
-    //     document.write("<br>")
-    //    }
-
-    //    for(var a=5;a>=1;a--){
-    //     for(var b =a;b>=1;b--){
-    //         document.writeln("*")
-    //     }
-    //     document.write("<br>")
-
-    // }
-
-
-    // var table=prompt("table entr")
-    // var table1=prompt("lent")
+        //  }                                     
+        // var a= fullName(prompt(Enter Weekdays))
+        // console.log(a)
 
-    // for(var a=1;a<=table1;a++){
-    //     document.writeln(table+ "*"+a+"="+table*a )
-    //     document.writeln("<br>")
-    // }
+        var a1 = "Sunday"
+        var a2 = "Saturday"
+        var user = prompt('Enter Weekdays')
+        switch (user) {
+            case a1:
+            case a2:
+                day = "Holiday"
+                break;
+            default: {
+                if (user != "a1" || user != "a2") {
+                    day = "workingday"
+                }
+            }
 
-    // for(var g=0;g<=20;g+=2){
-    // document.writeln(g)
-    // }
-    // document.writeln("<br>") //  Even: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20
+        }
+        console.log("tody " + day)//tody workingday
 
 
-    // for(var i=1;i<20;i+=2)
-    // {
-    //     document.writeln(i) //  Odd: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19
-    // }
 
-//     var multarray=[
-// //   
-//      [0,1,2,3],
-//      [1,0,1,2 ],
-//      [ 2,1,0,1]
-// ]
-// document.writeln("<br>")
-    
 
-//     document.writeln(multarray [0] +"<br>");
-//     document.writeln(multarray [1]+ "<br>");
-//     document.writeln(multarray [2]+ "<br>");
-//     document.writeln("<br>")
-//     document.writeln("<br>")
 
-   
-//      for(var p=0;p<multarray.length;p++){
-//         for(var z=0;z<=multarray.length;z++){
-//             document.write(multarray[p] [z] );
-              
-//           }
-//         document.writeln("<br>");
-        
-//       }  
 
 
 
-    //   var bakery=["cake", "apple", "cookie", "chips", "patties"]; 
 
-    
-    //  var b=prompt("Welcme to ABC Bakery Item Enter");
-    //  var Isavailabe = false;
-
-     
-    // for(var i=0;i<=bakery.length;i++)
-    // {
-    //     if(b==bakery[i]){
-    //     document.writeln("<h3>  Cookie is abailable </h3>"+"   "+b+"   "+i);
-        
-    //     Isavailabe = true;
-    //    } 
-   
-    // }
-
-    //  if(Isavailabe==false)
-    //   {
-    //      document.writeln(" <h3> Cookie is not abailable </h3>");
-
-    //   }
-
-
-    // var lar=[25,65,1,962,1]
-
-    // lar.sort(function(a,b){return b-a});
-    // document.write(lar)//962,65,25,1,1
-
-
-    document.writeln(" <h1> Multiples series </h1>")
-  
-
-        //  for(var a =1;a<100;a=a+10){
-        //     for(var b=a;b<a+10;b++){
-        //         document.writeln(b);
-        //     }
-        //     document.writeln("<br>");
-        //  }
-    //     document.writeln(" <h1> Multiples series </h1>")
-    //   for(var w=5;w<=100;w+=5){
-    //     document.write(w + " " )
-    //   }
-    //   document.writeln("<br>");
-
-
-    //   for(var w=1;w<100;w=w+10){
-    //     for(var b=w;b< w+10;b++){
-    //           document.writeln(b);
-    //   }
-    //   document.writeln("<br>");
-    // }
-
-
-
-
-
-
-
-
-
-
-
-        // var M =500
-        // var S =200
-        // var L =1000
-        
-        // var food=prompt("enter your food")
-        // if(food == "pizza"){
-        //     console.log(food)
-
-        //     var flavoure=prompt("enter your flavoure")
-        // if(flavoure == "Chichek" || "Meat"||"BBQ"){
-        //         console.log(flavoure)
-        //     }
-        //         var size =prompt("enter your size (M,S,L))")
-        //         if ( size == "m" || "M") {
-        //             var qty =+prompt("Enter Your Qty 1,2,3")
-        //             alert (qty * M)
-        //         }
-        //         else if(size == "s"|| "S") {
-        //             var qty =+prompt("Enter Your Qty 1,2,3")
-        //             alert (qty * S)
-        //         }
-        //         else if(size == "l"|| "L") {
-        //             var qty =+prompt("Enter Your Qty 1,2,3")
-        //             alert (qty * L)
-        //         }
-           
-         
-       
-        // }
-        //  else {
-        //     alert("enter pissa")
-        //  }
-
-        // var student1="ali"
-        // var student2="Mubeen"
-        // var student3="ashraf"
-         //var student4="mazhar"
-
-         
-
-        // var list= [["Ali","Mazhar","kashif"],["Ashraf","Madani",["Kashif","rizwan"]]]
-        // var listname= ["kashif","akbar","mohsin","nadeem"]
-        // var chek ="mohsin"
-        //  for (var i = 0 ; i < listname.length;i++){
-        //      if(chek == listname[i]){
-        //         alert("mach")
-
-        //         break
-
-                
-        //      }
-        //      else {
-        //         (alert("not mach"))
-        //      }
-        //  }    
-   
-            //  var arry=["kashif","asad","naveed","madani"]
-            //   var username="asad"
-              
-            //   var match="no"
-
-            //   for (var i=0; i < arry.length; i++) {
-            //      if(username == arry[i]){
-            //         var match = "yes"
-            //         break
-            //      }
-                 
-            //   }
-            //    if (match === "yes") {
-            //     alert ("ok")
-            //    } else
-            //    {
-            //     alert ("not ok")
-            //    }
-
-                //  var aryy = ["mazhar","madani","ahmad","naeem"]  فلیگ
-                //   var name= "dd"
-                //   var match = "no"
-
-                //   for(var i =0 ; i < aryy.length;i++){
-                //     if(name == aryy[i]){
-                //         var match ="yah"
-                //         break
-                //     }
-                //   }
-                //   if(match=== "yah"){
-                //     alert("Match Is ok")
-                //   }
-                //   else{
-                //     alert("Match is not Ok")
-                //   }
-                    // ****************************
-                // for(var i =1;  i <=100; i= i+10 ){
-                //     for( var j=i; j < i+10 ;j++){
-
-                //        document.writeln(j)
-                        
-                //     }
-                //     document.write("<br>")
-                  
-                // }  
-                // *************************** 
-            //     var firstNames = ["BlueRay ", "Upchuck ", "Lojack ", "Gizmo ", "Do-Rag "];
-            //    var lastNames = ["Zzz", "Burp", "Dogbone", "Droop"];
-
-            //    for(var i =0;i<firstNames.length; i++){
-                                  
-            //      document.write(firstNames[i]+"<br>")
-
-            //     for(var j = 0;j<lastNames.length;j++){
-            //         document.write(firstNames[i]+lastNames[j])
-            //         document.write("<br>")
-            //     }
-            //     document.write("<br>")
-            //    }
-              
-
-            // joint aarray
-
-
-         // // find/findindex**************************
-
-
-                //  var bb=["mubeen","kashif","sajid","mubeen","sajid","mubeen","sajid"]
-                //  var pp=bb.includes("mubeen")
-                //  document.write(pp)//0
-
-
-
-                //  var oo=bb.indexOf("mubeen",2)
-                // document.write(oo + "<br>")//3
-                // var zz=bb.lastIndexOf("mubeen",2)
-                // document.write(zz)//0
-
-
-            // var a=[5,2,1,6,55,31];
-            // var b=Array.isArray(a);
-            // document.write(b)//true
-
-            //const points = [40, 100, 1, 5, 25, 10];
-            // points.sort(function(a, b){return a - b});
-            // document.write(points)
-
-          
-
-
-
-            // var firstNames = ["C ", "Z ", "G ", "Q ", "P "];
-
-            // firstNames.sort()
-            // document.write(firstNames)//C,G,P,Q,Z
-            //  a.fill("A",3)
-            // document.write(a)////5,2,1,A,A,A
-                  
-                // var age=a.find(chek);
-                // document.write(age +"<br>");
-                // // find/findindex**************************
-                // var agea=a.findIndex(chek);
-                // document.write(agea +"<br>");
-
-                // function chek(age){
-                //     return age >=18;
-                // }
-                    // // filter **************************
-                // var age=a.filter(agee);
-                // document.writeln(age)
-
-                //  function agee(age){
-                //     return age<=20;
-                //  }
-
-
-                //  var age=[18,25,36,52]
-
-                // // var age_ok=age.some(chekage);
-                // // document.writeln(age_ok)
-                // // function chekage(age) {
-                // //     return age >=18;
-                // // }
-
-                // var age1=age.filter(agee);
-                // document.writeln(age1)
-
-                //  function agee(age){
-                //     return age<=20;
-                //  }
-
-          
-
-            //     var firstNames = ["mubeen","mazhar","mk","naweed","p"]
-
-            //     var chek="mazhar"
-
-               
-
-            //  for(var i =0;i < firstNames.length; i++){
-            //         if(chek.toLowerCase == firstNames[i]){
-            //             console.log("found");
-                   
-            //     } else{
-            //         console.log("not found");
-            //     }
-            
-            // }  
-
-            // var name="mubeen"
-            // var firstlaterupper=name[1].toUpperCase()+ name.slice(1)
-
-            // document.write(firstlaterupper)
-
-
-       
-                    
-            // var str="may name is mubeen and lahor largist city"
-            
-            // var firstChar = str.indexOf("city");
-            //  console.log(firstChar);
-
-            // for(var i=0; i< str.length;i++){
-            //     if(str.slice(i,i+6)=== "mubeen"){
-            //         str=str.slice(0,i)+"*"+str.slice(i,+ 25)
-            //         console.log(str)
-            //         break;
-                    
-            //     }
-            // }
-
-            
-
-            // for(var i =0; i<str.length;i++){
-            //     if(str.slice(i,i +6)=== "mubeen"){
-            //         console.log("found");
-            //         break;
-                    
-            //     }
-                
-            // }
-
-              //  console.log(str.slice(0,1))
-            // for(var i=0; i < str.length; i++){
-            //     console.log(str.slice(i,i+3));
-                
-            // }
-           
-        //   var lanth=str.length;
-        //   console.log(lanth);
-
-        // str =str.toUpperCase()
-
-        // var str1=str[0].toUpperCase()
-       
-        //  str.slice(1)
-
-        //  console.log(str1+str);
-            
-            
-          //console.log(str1);
-
-            // str=str.slice(8,13)
-            //     console.log(str);
-            // document.write(str);
-
-         
-
-               
-
-
-
-
-
-
-
-
-
-
-
-      
-      
 
     </script>
 </body>
+
 </html>

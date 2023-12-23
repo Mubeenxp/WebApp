@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3> Muhammad Mubeen Attar ||116698|| Faizan e Madina||Assignment-14</h3>
+
+    <script>
+        document.write("<br><br> Q.1 Write a function that displays current date & time in your browser. <br>")
+        function currentDate() {
+            var a =new Date()
+            document.write("<h3>"+a+"</h3>");
+        }
+        currentDate();
+        //****************************
+           document.write("<br><br> Q.2 Write a function that takes first & last name and then it greets the user using his full name. <br>")
+            function fullName(firsname,lastname) {
+                document.write("<h3>"+firsname+" "+lastname+"</h3>");
+            }
+           fullName(prompt("Enter your First Name"),prompt("Enter your First Name"));
+        // ****************************
+        document.write("<br><br> Q.3 Write a function that adds two numbers (input by user)and returns the sum of two numbers. <br>")
+
+        function sum(a,b) {
+            document.write(`<h3>${a+b}</h3>` )
+        }
+
+         sum(parseInt(prompt("Enter Any number")),parseInt(prompt("Enter Any number")));
+        // ****************************
+        document.write("<br><br> Q.4 Calculator:Write a function that takes three arguments num1, num2 & operator & compute the desired operation. Return and show the desired result in your browser. <br>")
+        function calculator(num1, oper, num2) {
+            if (oper == "+") {
+                document.write(`<h3>${num1 + num2}<h3>`)
+
+            } else if (oper == "-") {
+                document.write(`<h3>${num1 - num2}<h3>`)
+            } else if (oper == "*") {
+                document.write(`<h3>${num1 * num2}<h3>`)
+            }
+            else if (oper == "/") {
+                document.write(`<h3>${num1 / num2}<h3>`)
+            }
+        }
+        calculator(parseInt(prompt("Enter Any number")), prompt("Enter operator"), parseInt(prompt("Enter Any number")));
+        // ****************************
+        document.write("<br><br> Q.5 Write a function that squares its argument. <br>")
+        function squares(sq) {
+            document.write(`${Math.pow(sq,sq)}`)
+        }
+
+        squares(5);
+        // ****************************
+        document.write("<br><br> Q.6 Write a function that computes factorial of a number. <br>")   
+
+        function factorial(number) {
+            var b= 1;
+
+            if (number==0) {
+                document.write(`the factorial of ${number} is 1`)
+            } else if ((number < 0)) {
+                document.write(`the factorial of -number is not possible `)
+            } else{
+                for (let index = 1; index <= number; index++) {
+                    b = b*index
+                    document.write(`<h3>the factorial of ${number} is ${b} </h3>`)
+
+                }
+            }
+
+        }
+
+        factorial(parseInt( prompt("Enter Any Number")))
+        // ****************************
+        document.write("<br><br> Q.7 Write a function that take start and end number as inputs & display counting in your browser. <br>")   
+
+        function startend(start,end) {
+            for (let index = start; index <= end; index++) {
+                document.write(`<h3>${index} <br> </h3>` )
+
+            }
+        }
+
+        startend(parseInt( prompt("Enter start numbe")),parseInt( prompt("Enter end numbe")))
+
+        document.write("<br><br> Q.8 Write a nested function that computes hypotenuse of aright angle triangle <br>")   
+        // ****************************
+         document.write("<br><br> Q.9 Write a function that calculates the area of a rectangle. <br>A = width * height<br>Pass width and height in following manner:<br>   i. Arguments as value<br>ii. Arguments as variables <br>")   
+
+            function rectangle_area(height,width,c) {
+            var a=(height*width)/2;
+            document.write(`<h3> Height ${height} Width ${width} Area ${a} <br> </h3>`)
+            var puls=(height+width+c)/2
+            var tem=Math.sqrt( puls*(puls-height)*(puls-width)*(puls-c))
+            document.write(`<h3> rectangle sqrt ${tem} </h3>`)
+
+         }
+        rectangle_area(parseInt( prompt("A: Enter height numbe")),parseInt( prompt("B: Enter width numbe")),parseInt( prompt("C: Enter  numbe")))
+        // ****************************   
+       document.write("<br><br> Q.11 Write a JavaScript function that accepts a string as aparameter and converts the first letter of each word of the string in upper case. <br>EXAMPLE STRING : 'the quick brown fox'<br> EXPECTED OUTPUT : 'The Quick Brown Fox' <br>")
+       
+       letter_of_each_word("the quick brown fox"); 
+        
+
+        function letter_of_each_word(sentence) {
+            const finalSentence = sentence.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
+            document.write(`<h3>${finalSentence} <h3>`);      
+
+        }
+        //***********
+
+            letter_of_each_word2(prompt("type small any letter")); 
+            function letter_of_each_word2(sentence) {
+                var word=sentence.split(" ");
+                for (let index = 0; index < word.length; index++) {
+                    word[index] = word[index][0].toUpperCase() + word[index].substr(1);
+                    
+                } const a= word.join(" ");
+                document.write(`<h3> Your Type text ${sentence} is convert Capitalize each word  ${a} </h3>`); 
+            }
+            
+            //*********
+            /* function letter_of_each_word(sentence) {
+            var word=sentence.split(" ");
+            console.log(
+            word.map((word) => { 
+            return word[0].toUpperCase() + word.substring(1); 
+            }).join(" ")) 
+            } */
+         // ****************************  
+         document.write("<br><br> Q.12 Write a JavaScript function that accepts a string as a parameter and find the longest word within the string. <br>EXAMPLE STRING : 'Web Development Tutorial'<br> EXPECTED OUTPUT : 'Development' <br>")
+         
+         function find_longest_word(str)
+         {
+        var array1 = str.match(/\w[a-z]{0,}/gi);
+        var result = array1[0];
+           
+        for(var x = 1 ; x < array1.length ; x++)
+        {
+            if(result.length < array1[x].length)
+            {
+                result = array1[x];
+            } 
+        } 
+        return result;
+        
+    }
+    document.write(`<h3>${find_longest_word('Web Development Tutorial')}</h3>`)
+     // ****************************  
+    document.write("<br><br> Q.13 Write a JavaScript function that accepts two arguments, a string and a letter and the function will count the number of occurrences of the specified letter within the string. <br> Sample arguments : 'JSResourceS.com', 'o' <br>")
+      
+    function string_find(text1,find2) {
+         var text=text1;
+         var find=find2;
+         document.write(`<h3> ${text1} letter ${find} position number of : ${text.indexOf(find2)}</h3>`);
+    }
+
+    string_find("Dawateislami",'i')
+
+    // ****************************
+    document.write("<br><br> Q.14 Write a nested function that computes hypotenuse of aright angle triangle <br>")   
+        
+
+       
+
+
+        
+
+
+
+
+    </script>
+</body>
+
+</html>
