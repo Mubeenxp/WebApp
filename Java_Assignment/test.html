@@ -8,51 +8,268 @@
 </head>
 
 <body>
+   <!-- <a href="#" ONCLICK="alert('my nam is evant')">click me </a> <br>
+   <a href="JavaScript:void(0)" ONCLICK="alert('my nam is evant')">click me </a> 
+   <a href="javaScript:void(0)" onclick="var userName=prompt('Your Name Enter');alert('inline javaScript' + userName)" > click me </a>
+    <button onclick="var userName=prompt('Your Name Enter');alert('inline javaScript' +'  '+ userName) ">click me </button>
+     <button onclick="userName()" > click me</button>
+     <input type="button" value="click" onclick="alert('my name mubeen')" >
+     <a href="#"> <img src="data:image/png;base64,
+       <!-- <h1 style="border: 1px solid black; position:absolute;"  onmouseover="alert('میں مدینے جاؤں گا')" > Madina </h1> -->
+     <!-- <h2 onMouseover ="this.style.color='green',this.style. textTransform='uppercase';" onmouseout="this.style.textTransform='lowercase',this.style.color='blue' ; ">I'm Going To Madina</h2>   -->
+    
+     <!-- <input type="text" size="10" onFocus="makeFieldYellow();" onBlur="makeFieldWhite();" > -->
 
+     <!-- <form onsubmit="checkAddress('email')">
+      Email: <br>
+      <input type="text" size="10" id="email">
+      <input type="submit"  value="submit" onclick="">
+     </form> -->
+     <!-- <div class="contener" >
+     <form>
+      Email: <br>
+      <input type="email" size="10" id="email">
+      <input type="submit"  value="submit" onclick="checkAddress()">
+     </form>
+      </div>
+      <form action=""></form> -->
+
+
+    <!-- <p id="loris"onmouseover="expand();"> Slow Loris: Mouse over for more info</p> -->
+
+
+    <!-- <form>
+      <p>Zipcod:</p>
+      <input type="text" id="zip" onBlur="citynamea();" >
+      <p>city:</p>
+      <input type="text" id="city">
+
+    </form> -->
+
+
+    <h1 id="world">hllo world </h1>    
+
+
+    <button type="submit" onclick="hello();" >shomor </button>
 
     <script>
+     var text=document.getElementById('world').innerText
+      console.log(text.length)
+      console.log(text)
 
+      if (text.length>100) {
 
-
-
-        // function fullName(fisrtName){
-
-        //     if (fisrtName==="") {
-
-        //          console.log("enter user name");
-        //          return;
-        //     }  
-        //      return fisrtName
-
-        //  }                                     
-        // var a= fullName(prompt(Enter Weekdays))
-        // console.log(a)
-
-        var a1 = "Sunday"
-        var a2 = "Saturday"
-        var user = prompt('Enter Weekdays')
-        switch (user) {
-            case a1:
-            case a2:
-                day = "Holiday"
-                break;
-            default: {
-                if (user != "a1" || user != "a2") {
-                    day = "workingday"
-                }
-            }
-
+        user()
+       
+      }
+       
+      function user() {
+          console.log('afsdf')
+          
         }
-        console.log("tody " + day)//tody workingday
+    
+
+      // function citynamea() {
+      //   var cityname;
+      //   var a=document.getElementById('zip').value;
+      //   console.log(a)
+      //   switch (a) {
+      //     case '123':
+      //       cityname="karachi";
+      //       break;
+      //     case '1234':
+      //     cityname="lahor";
+      //       break;
+      
+      //   }
+      //  document.getElementById('city').value = cityname;
+
+      // }
+
+      // function checkAddress() {
+      //   var input=document.getElementById('email').value
+      //  if (input.trim() =="") {
+      //   alert('enter email')
+      //  }else{
+      //   console.log(input)
+      //  }
+        
+      // }
+      // function userName (){
+      //   var user=prompt('Your user name');
+      //   alert('user'+'   '+user)
+      // }
+
+        // var pera= "i live datwateislami"
+        //  var a = pera.split(" ");
+
+        //  for(var i=0; i < a.length; i++ ) {
+        //     a[i]= a[i][0].toUpperCase()+a[i].substr(1); 
+        //  }
+        //  var b = a.join(" ");
+        //   console.log(b)
+
+        //   var pera= "i live datwateislam"
+
+        //   var f="datwateislami"
+        //   for(var i = 0; i <pera.length; i++ ){
+        //     if(pera.slice(i,i+f.length)===f){
+        //         console.log("found")
+        //         break;
+        //     } 
+        //   }
+
+        //   var pera= "i live datwateislami"
+        //   var f="datwateislami"
+        //   if(pera.indexOf(f) !==-1){
+        //     console.log("found");
+        //   }
+        //   else(console.log("not found"))
+
+        //   var pera= "i live datwateislami  i live datwateislami"
+        //   var b= pera.split(" ")
+         // console.log(b)
+
+           //console.log(pera.indexOf('datwateislami'))
+          // console.log(b[2].indexOf('a'))
 
 
+        //    var fund= "datwateislami"
+
+        //  var a=  pera.replaceAll(fund,'mubeen')
+        //  console.log(a)
+
+        //  var a = parseInt(prompt("asf"))
+        //  var b = parseFloat(prompt("asf"))
+        //  var d = +prompt("asf")
+        //  var e = Number(prompt("asdf"))
+         
+        //  console.log(a)
+        //  console.log(b)
+        //  console.log(d)
+
+        // var a =25.5
+        //  var con=toString(e)
+        //  console.log(typeof(con))
+         
+        // var number =-3.5 
+        // console.log( Math.round(number))
+        // console.log( Math.ceil(number))
+        // console.log( Math.floor(number))
+
+        // var a =Math.random()
+        // console.log(a*100)
+        //   var a = 25.2522513
+        //    console.log(a.toFixed(1))
+
+        // var a = 'i live madina'
+
+        // var b = a.charAt(7)
+        // console.log(b)
+        //    var date=new Date ()
+        //    console.log(date)
+           
+        // var b = date.toString()
+        // console.log(typeof(b))
+        // var c= b.slice(0.1)
+        // console.log(c)
+
+       // var a="            i live madina                     " 
+        // console.log(a.substr(6,6))
+        // console.log(a.slice(6,12))
+        //  console.log(a.trim())
+        //  console.log(a.trimEnd())
+        //  console.log(a.trimStart())
+         
+      // var a = 'c'
+        // switch(a){
+        //     case 'Mazhar':
+        //         day='sunday'
+        //         break;
+        //     case 'Mubeen':
+        //         day='peer'
+        //         break;
+        //     case 'Nadeen':
+        //         day='sunday'
+        //         break;
+                
+        // }
+       // console.log(day)
+
+        //     switch (a) {
+        //     case 'f':
+        //     case 'e':
+        //     case 'd':
+        //     case 'c':
+        //     case 'b':
+        //     case 'a':
+        //         day = 'chalo chalo home chalo'
+        //         break;
+        // }
+        // console.log(day)
+       
+       
+    //    Q1******************
+    
+    
+      // var d=new Date("2022-05-15T03:00:00Z");
+      // console.log(d.toLocaleString());
+       //5/15/2022, 8:00:00 AM
+       
+       //    Q2******************
+       // var dd="Madina";
+    //console.log(dd.indexOf('a'))//1
+      // console.log(dd.lastIndexOf('a'))//5
+       
+       //    Q3******************
+       
+    //    function ab(a,b){
+    //     return a+b/2;
+    //    }
+    //    console.log(ab(2,1));//2.5
+
+    // var a = 10
+
+    // function name() {
+    //     console.log(a)
+    //     var a = 20
+    // }
+    // name() //undefined
+
+    // var a = 1.5;
+    // console.log(Math.round(a))//2
+
+//  var b = new Date()
+//  console.log(b.getMonth())//0
+
+//  var a = 10;
+//     console.log(a.toFixed(2))//10.00
 
 
+//  function name(a,b) {
+//         return a * number (b);
+       
+//     }
+//     console.log(name("2","3"))//ererr
 
+  
 
+ 
 
-
-
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+     
+       
+       
+       
 
     </script>
 </body>
