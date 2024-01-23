@@ -1,0 +1,65 @@
+@import url(https://fonts.google.com/specimen/Poppins?query=popp);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+
+}
+.container{
+    position: relative;
+    max-width: 300px;
+    width:  100%;
+    padding: 10px 20px 20px;
+    border-radius: 12px;
+    background-color: #817171;
+    box-shadow: 0 5px rgb(0,0,0,0,05);
+    
+    
+}
+.button{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns:repeat(4,1fr) ;
+}
+.display{
+    height: 80px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 25px;
+    outline: none;
+    text-align: center;
+    color: black;
+    border: none;
+    pointer-events: none;
+    border-radius: 5px;
+}
+.button button{
+padding: 12px 10px;
+border-radius: 6px;
+border: none;
+background-color: #eee;
+font-size: 20px;
+cursor: pointer;
+}
+.button button:active{
+    transform:  scale(0.99);
+}
+.operator{
+    color: rgba(100, 173, 173, 0.822);
+}
+header{
+color: aliceblue;
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding: 5px;
+font-size: large;
+text-shadow: #3a3636;
+}
