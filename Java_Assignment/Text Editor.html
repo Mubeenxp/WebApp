@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,height=device-height,initial-scale=1"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="Text_Editor.css" />
+    <title>Text Editor</title>
+  </head>
+  <body>
+    <div class="box1">
+      <div class="row">
+        <div class="col">
+          <div class="first box">
+            <input
+              type="number"
+              id="font-size"
+              value="16"
+              max="50"
+              min="1"
+              onchange="f1(this)"
+            />
+          </div>
+          <div class="second box">
+            <button type="button" onclick="f2(this)">
+              <i class="fa-solid fa-bold"></i>
+            </button>
+          </div>
+          <div class="second box">
+            <button type="button" onclick="f3(this)">
+              <i class="fa-solid fa-italic"></i>
+            </button>
+          </div>
+          <div class="second box">
+            <button type="button" onclick="f4(this)">
+              <i class="fa-solid fa-underline"></i>
+            </button>
+          </div>
+          <div class="third box">
+            <button type="button" onclick="f5(this)">
+              <i class="fa-solid fa-align-left"></i>
+            </button>
+          </div>
+          <div class="third box">
+            <button type="button" onclick="f6(this)">
+              <i class="fa-solid fa-align-center"></i>
+            </button>
+          </div>
+          <div class="third box">
+            <button type="button" onclick="f7(this)">
+              <i class="fa-solid fa-align-right"></i>
+            </button>
+          </div>
+          <div class="fourth box">
+            <button type="button" onclick="f8(this)">
+              aA
+            </button>
+            <button type="button" onclick="f9(this)">
+              <i class="fa-solid fa-text-slash"></i>
+            </button>
+            <input type="color"onclick="f10(this)">
+          </div>
+          
+            <br><br>
+            <div class="col">
+              <textarea  id="textarea" placeholder="your tex here " ></textarea>
+            </div>
+        
+
+        </div>
+      </div>
+    </div>
+
+    <script> 
+    const textarea=document.getElementById("textarea");
+    function f1(e) {
+      let value =e.value;
+      textarea.style.fontSize=value + "px";
+    }
+    function f2(e) {
+     if (textarea.style.fontWeight=="bold") {
+      textarea.style.fontWeight="normal";
+      e.classList.remove("active");
+     } else {
+      textarea.style.fontWeight="bold";
+      e.classList.add("active");
+     }
+    }
+    function f3(e){
+      if (textarea.style.fontStyle=="italic") {
+        textarea.style.fontStyle = "normal";
+        e.classList.remove("active");
+      } else{
+        textarea.style.fontStyle="italic";
+        e.classList.add("active");
+      }
+    }
+    function f4(e){
+      if (textarea.style.textDecoration=="underline") {
+        textarea.style.textDecoration = "normal";
+        e.classList.remove("active");
+      } else{
+        textarea.style.textDecoration="underline";
+        e.classList.add("active");
+      }
+    }
+    function f5(e) {
+      textarea.style.textAlign="left";
+    }
+    function f6(e) {
+      textarea.style.textAlign="center";
+    }
+    function f7(e) {
+      textarea.style.textAlign="right";
+    }
+    function f8(e){
+      if (textarea.style.textTransform=="uppercase") {
+        textarea.style.textTransform = "normal";
+        e.classList.remove("active");
+      } else{
+        textarea.style.textTransform="uppercase";
+        e.classList.add("active");
+      }
+    }
+    function f9(){
+      textarea.style.fontWeight="normal";
+      textarea.style.textAlign="left";
+      textarea.style.fontStyle="normal";
+      textarea.style.textTransform="capitalize";
+      textarea.value="";
+    }
+    function f10(e){
+      let value=e.value;
+      textarea.style.color=value;
+    }
+   Window.abbEventListener("load"), ()=> {
+    textarea.value=""
+   }
+    
+    
+    </script>
+
+    
+  </body>
+</html>

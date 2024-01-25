@@ -15,24 +15,13 @@
 </head>
 
 <body>
+  <img src="~/images/Bold"  alt="Bold" onclick="changeFont('TextBox1','b');"  />
+  <img src="~/images/Italic" alt="Italic" onclick="changeFont('TextBox1','i');"  />
+  <img src="~/images/Underline" alt="Underline" onclick="changeFont('TextBox1','u');"  />
+
 
    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <!-- <p id="pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet tempore magnam doloribus illum atque
+    <p id="pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet tempore magnam doloribus illum atque
     tenetur magni alias optio minima aut laborum totam et, aliquam quo? Iste dolor itaque dolorum amet!</p>
   <label for="contact"> search text </label>
   <input type="text" id="contact">
@@ -41,7 +30,7 @@
 
   <h1 id="mk" >my name mubeen</h1>
   <Button id="btn" onclick="changeCase()"> text case </Button>  
-  <Button id="btn" onclick="textbold()"> text bold </Button>   -->
+  <Button id="btn" onclick="textbold()"> text bold </Button>   
 
 
   <!-- <Img src="./Bulb/black.png" alt="" width="340" height="100" id="aa" onclick="hidden1();" ></Img> -->
@@ -51,15 +40,16 @@
      <button onclick="name1();" id="bnt" >imge change </button> -->
 
   <script>
-    //    function searchtext() {
-    //   var findpera = document.getElementById('pera')
-    //   var change = findpera.innerText.toLowerCase()
-    //   var findinput = document.getElementById('contact').value.toLowerCase()
+       function searchtext() {
+      var findpera = document.getElementById('pera')
+      var change = findpera.innerText.toLowerCase()
+      var findinput = document.getElementById('contact').value.toLowerCase()
 
-    //   findpera.innerHTML = change.replace(findinput, `<mark> ${findinput} </mark> `)
-    // }
+      findpera.innerHTML = change.replace(findinput, `<mark> ${findinput} </mark>`)}
    
-
+        function name(text) {
+         console.log()
+        }
     // function changeCase() {
     //   document.getElementById('pera').className ='text'
     // }
