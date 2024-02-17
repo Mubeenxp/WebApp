@@ -1,90 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-<style>
-  .bb {display:none;}
-  .text{text-decoration: underline;}
-  .bold{text-transform: capitalize;}
-</style>
-
-
-</head>
-
-<body>
-  <img src="~/images/Bold"  alt="Bold" onclick="changeFont('TextBox1','b');"  />
-  <img src="~/images/Italic" alt="Italic" onclick="changeFont('TextBox1','i');"  />
-  <img src="~/images/Underline" alt="Underline" onclick="changeFont('TextBox1','u');"  />
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  <style>
+   .mk{
+      background-color: brown;
+      font-size: xx-large;
+      border: 5px solid blanchedalmond;
+    } 
+    .kk{
+      text-align: center;
+      text-transform: capitalize;
+    }
+  </style>
+  </head>
+   <body>
 
    
-    <p id="pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet tempore magnam doloribus illum atque
-    tenetur magni alias optio minima aut laborum totam et, aliquam quo? Iste dolor itaque dolorum amet!</p>
-  <label for="contact"> search text </label>
-  <input type="text" id="contact">
-
-  <Button id="btn" onclick="searchtext()"> search </Button>  
-
-  <h1 id="mk" >my name mubeen</h1>
-  <Button id="btn" onclick="changeCase()"> text case </Button>  
-  <Button id="btn" onclick="textbold()"> text bold </Button>   
-
-
-  <!-- <Img src="./Bulb/black.png" alt="" width="340" height="100" id="aa" onclick="hidden1();" ></Img> -->
-
-    <!-- <img src="./Bulb/yellow.png" alt="" id="imgchange">
-
-     <button onclick="name1();" id="bnt" >imge change </button> -->
-
-  <script>
-       function searchtext() {
-      var findpera = document.getElementById('pera')
-      var change = findpera.innerText.toLowerCase()
-      var findinput = document.getElementById('contact').value.toLowerCase()
-
-      findpera.innerHTML = change.replace(findinput, `<mark> ${findinput} </mark>`)}
-   
-        function name(text) {
-         console.log()
-        }
-    // function changeCase() {
-    //   document.getElementById('pera').className ='text'
-    // }
-    // function textbold() {
-    //   document.getElementById('pera').className +=' bold'
-    // }
+  
+    <script>
       
+     
+      var show=document.querySelector('body')
+      var h1=document.createElement('h1')
+    
+      h1.innerText='i live madina'
+      var id= h1.setAttribute('class','mk')
+      show.append(h1)
+      var btn=document.createElement('button')
+      var a = btn.innerText='change style'
+     
+      h1.after (btn)
+      console.log(btn)
 
-    // function hidden1() {
-    //   document.getElementById('aa').className='bb'
-    // }
-
-    //   var fag= true
-    // function name1() {
-    //   if (fag === true) {
-    //     document.getElementById('imgchange') .src= 'Bulb/red.png'
-    //     fag =false
-    //   }  else {
-    //     document.getElementById('imgchange').src= 'Bulb/pink.png'
-               
-    //     fag= true
-       
-        
-    //   }
+       btn.addEventListener("click", function () {
+          h1.style.backgroundColor='pink'
+          h1.classList.add('kk')
+          var a= document.getElementsByName('h1') 
+          
+        });
       
-    // }
-
-
-
-
-
-
-
-
-  </script>
-</body>
+        var p = document.querySelector('body')
+        var e=document.createElement('p')
+        var ee=document.createTextNode('mubeen')
+        e=ee
+        console.log(e)
+  
+      </script>
+  </body>
 
 </html>
