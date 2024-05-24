@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    </head>
+    <style>
+     
+
+    </style>
+   <body>
+
+  
+
+ 
+
+
+    <input type="text"  id="text">
+
+    <button onclick="addtodo()">Add</button>
+    <button onclick="deletall()">Alldelet</button>
+    <button onclick="textbox()">Selectdelet</button>
+    
+
+    <ul id="ul"></ul>
+        
+   
+   
+    <script>
+     function addtodo() {
+      var a = document.querySelector('#text')
+    
+      var li=document.createElement('li')
+      li.setAttribute('class','mk')
+      var editbnt=document.createElement('button')
+      editbnt.innerText='Edit'
+      var deletbtn=document.createElement('button')
+      deletbtn.innerText='Delet'
+      deletbtn.setAttribute('onclick','delet()')
+      editbnt.setAttribute('onclick','edit()')
+
+      var box=document.createElement('input')
+      box.setAttribute('type','checkBox')
+      box.setAttribute('id','box1')
+    
+      li.append(box)
+      li.append(a.value)
+      
+      li.appendChild(editbnt)
+      li.appendChild(deletbtn)
+      ul.append(li)
+      a.value =''
+     
+   
+    }
+
+    
+       function delet (){
+         event.target.parentNode.remove()
+              
+       }
+       function edit (){
+         
+         var odltext = event.target.previousSibling.nodeValue
+          var newtext=prompt('new text enter')
+         event.target.previousSibling.nodeValue=newtext
+         
+         
+        }
+        function deletall(){
+         var ula= document.querySelectorAll('#ul li')
+        // event.target.parentNode.childNodes[9].remove()
+        // ul.innerHTML = '';
+        //****
+        //   console.log(ula)
+          ula.forEach(ula => {
+            ula.parentNode.removeChild(ula);
+        });
+        //****
+
+
+        }
+        //***********************
+      
+     
+
+
+
+      
+  
+
+       
+
+       
+    </script>
+  </body>
+
+</html>

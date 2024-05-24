@@ -1,0 +1,23 @@
+.container-fluid{
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+    margin: 100px;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+     
+}
+
+
+
+
+
+
+input{
+    color:  rgb(26, 24, 24); 
+    font-weight: bolder; 
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+ 
+  }

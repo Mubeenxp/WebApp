@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  <style>
+   .mk{
+      background-color: brown;
+      font-size: xx-large;
+      border: 5px solid blanchedalmond;
+    } 
+    .kk{
+      text-align: center;
+      text-transform: capitalize;
+    }
+  </style>
+  </head>
+   <body>
+
+   
+  
+    <script>
+      
+     
+      var show=document.querySelector('body')
+      var h1=document.createElement('h1')
+    
+      h1.innerText='i live madina'
+      var id= h1.setAttribute('class','mk')
+      show.append(h1)
+      var btn=document.createElement('button')
+      var a = btn.innerText='change style'
+     
+      h1.after (btn)
+      console.log(btn)
+
+       btn.addEventListener("click", function () {
+          h1.style.backgroundColor='pink'
+          h1.classList.add('kk')
+          var a= document.getElementsByName('h1') 
+          
+        });
+      
+        var p = document.querySelector('body')
+        var e=document.createElement('p')
+        var ee=document.createTextNode('mubeen')
+        e=ee
+        console.log(e)
+  
+      </script>
+  </body>
+
+</html>

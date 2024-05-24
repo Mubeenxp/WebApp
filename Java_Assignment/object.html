@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            border: 1px solid   black;
+            background-color: aquamarine;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <select name="" id="stodutn">
+        <option value="" , selected disabled>Select id </option>
+    </select>
+    <button onclick="all()" >Show All</button>
+
+<table id="show" style="border: 1px solid black; padding: 2px; margin: 2px; width: 400px;">
+ <thead>
+    <td>ID</td>
+    <td>Name</td>
+    <td>Age</td>
+    <td>Grouse_Salary</td>
+    <td>B_salary</td>
+    <td>position</td>
+    <td>Department</td>
+    <td>class</td>
+    <td>Branch</td>
+    <td>Shift</td>
+    <td>city</td>
+    <td>Province</td>
+    <td>Country</td>
+ </thead>
+   
+</table>
+
+<script>
+    var array=[
+        
+        {id:101,delete:{name1:'sabir',age:41,  Grouse_Salary:80000 ,B_salary:35000 ,position:'P',Department:'HR', class:'excel'   , Branch:'A',Shift:'A' ,city:'karachi',Province:'sindh',Country:'paksitan'}},
+        {id:102,delete:{name1:'sabir',age:36,  Grouse_Salary:70000 ,B_salary:40000 ,position:'F',Department:'GHQ', class:'excel'   , Branch:'A',Shift:'A' ,city:'Rawalpindi',Province:'Punjab',Country:'paksitan'}},
+        {id:103,delete:{name1:'sabir',age:30,  Grouse_Salary:60000 ,B_salary:30000 ,position:'E',Department:'ijara', class:'excel'   , Branch:'A',Shift:'A' ,city:'islamabad',Province:'punjab',Country:'paksitan'}},
+        {id:104,delete:{name1:'mohsin',age:35, Grouse_Salary:50000 ,B_salary:25000 ,position:'D',Department:'social media', class:'powrpint', Branch:'A',Shift:'A' ,city:'Quetta',Province:'balochitan',Country:'paksitan'}},
+        {id:105,delete:{name1:'shabir',Age:38, Grouse_Salary:40000 ,B_salary:27000 ,position:'C',Department:'Madarsatulmadina', class:'powrpint', Branch:'A',Shift:'A' ,city:'Peshawar',Province:'kpk',Country:'paksitan'}},
+        {id:106,delete:{name1:'shabir',Age:38, Grouse_Salary:30000 ,B_salary:26000 ,position:'B',Department:'Shura Office', class:'powrpint', Branch:'A',Shift:'A' ,city:'Muzaffarabadbad',Province:'Kashmir',Country:'paksitan'}}
+        
+    ]
+    
+    var list=document.getElementById('stodutn')
+    var doc=document.getElementById('show')
+    list.addEventListener('change',function (e) {
+        
+        doc.innerHTML='';
+        for(var a =0 ; a < array.length;a++){ 
+            if (array[a].id=== parseInt( list.value)){
+                doc.innerHTML +=`  
+    <tr>
+    <td> ${array[a].id} </td>
+    <td> ${array[a].delete.name1}</td>
+    <td> ${array[a].delete.age}</td>
+    <td> ${array[a].delete.Grouse_Salary}</td>
+    <td> ${array[a].delete.B_salary}</td>
+    <td> ${array[a].delete.position}</td>
+    <td> ${array[a].delete.Department}</td>
+    <td> ${array[a].delete.class}</td>
+    <td> ${array[a].delete.Branch}</td>
+    <td> ${array[a].delete.Shift}</td>
+    <td> ${array[a].delete.city}</td>
+    <td> ${array[a].delete.Province}</td>
+    <td> ${array[a].delete.Country}</td>
+    
+   </tr> `
+}
+
+}
+
+       
+
+
+
+    })
+   
+    for(var i =0 ; i < array.length;i++){
+        list.innerHTML +=`<option value="${array[i].id}">${array[i].id}</option>`
+      
+            
+    }  
+     document.getElementsByName('button') 
+     
+     function all() {
+        
+         for(var i =0 ; i < array.length;i++){
+            
+            doc.innerHTML +=`  
+    <tr>
+    <td> ${array[i].id} </td>
+    <td> ${array[i].delete.name1}</td>
+    <td> ${array[i].delete.age}</td>
+    <td> ${array[i].delete.Grouse_Salary}</td>
+    <td> ${array[i].delete.B_salary}</td>
+    <td> ${array[i].delete.position}</td>
+    <td> ${array[i].delete.Department}</td>
+    <td> ${array[i].delete.class}</td>
+    <td> ${array[i].delete.Branch}</td>
+    <td> ${array[i].delete.Shift}</td>
+    <td> ${array[i].delete.city}</td>
+    <td> ${array[i].delete.Province}</td>
+    <td> ${array[i].delete.Country}</td>
+    
+   </tr> `
+                 
+         }        
+         
+     }
+</script>
+</body>
+</html>

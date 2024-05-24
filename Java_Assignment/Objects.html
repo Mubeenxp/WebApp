@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+    </head>
+    <style>
+     
+
+    </style>
+   <body>
+     
+     <h1>id select</h1>
+     <select name="" id="cod">
+       <option value="101">101</option>
+       <option value="102">102</option>
+       <option value="103">103</option>
+       <option value="104">104</option>
+       <option value="105">105</option>
+      </select>
+      <h1>Stodunt_id:< id="uid"></></h1>
+      <h1>Name:< id="name"></></h1>
+      <h1>Age:< id="age"></></h1>
+      <h1>Class:< id="class"></></h1>
+
+      <div id="show"></div>
+  
+
+ 
+    <script>
+    
+      var array=[
+        
+        
+        {id:101,delete:{name1:'mk',age:26,class:'excel'}},
+        {id:104,delete:{name1:'kk',age:28,class:'powrpint'}},
+        {id:105,delete:{name1:'ll',age:23,class:'a'}}
+     
+      ]
+
+      var userid=document.getElementById('uid');
+      var user=document.getElementById('name');
+      var userage=document.getElementById('age');
+      var userclass =document.getElementById('class');
+      
+
+        var selectdata=document. getElementById('cod')
+         selectdata.addEventListener('change',function () {
+           
+           for (let index = 0; index < array.length; index++) {
+             if (array[index].id === parseInt(selectdata.value)) {
+                //console.log( array[index].delete);
+     
+                 userid.innerText=array[index].id
+                 user.innerText=array[index].delete.name1
+                userage.innerText=array[index].delete.age
+                userclass.innerText=array[index].delete.class
+                 break;
+               } 
+               
+              }
+         })
+
+        // *************
+
+        var show=document.getElementById('show')
+         for (let index = 0; index < array.length; index++) {
+             
+               //console.log( array[index].delete);
+              var card=document.createElement('div')
+               var html = `
+               <h1>Stodunt_id:>${array[index].id} </h1>
+              <h1>Name:> ${array[index].delete. name1}</h1>
+              <h1>Age: >${array[index].delete.age}</h1>
+              <h1>Class:${array[index].delete.class}></h1>
+             `
+              }
+              
+              card.innerHTML=html
+
+
+      // var data=102   
+
+
+
+        //console.log(array[1].delete.name)
+        
+        
+        
+        // var data=102
+        
+        // if (arry[1].id === data) {
+        //   console.log(arry[0].delete);
+          
+        // } else if (arry[1].id === data) {
+        //   console.log(arry[1].delete);
+          
+        // } else {
+        //   'no data'
+        // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // var Objects={
+      //   name:'mubeen',
+      //   last:'attari',
+      //   age:'mubeen',
+      //   email:'mubeenxp@.gmail.com',
+      //   ph:'mubeen',
+      //   arry:['mubeen','mazhar','Attari',],
+      //   contry:{city:'karachi',postcod:2525},
+      //   salary:function(){ return 25000;},
+      //   fullname:function(){return this. name +" "+ this.last}
+      //   }
+      //   Objects.subjget='java'
+      //   delete Objects.age
+        
+      // console.log(Objects)//mubeen java
+
+
+
+      // document.write(Objects)//[object Object]
+      // //console.log(arry)
+       
+    </script>
+  </body>
+
+</html>
