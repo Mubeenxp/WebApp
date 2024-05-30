@@ -1,0 +1,58 @@
+.intro {
+    height: 100%;
+  }
+  
+  @media (min-height: 300px) and (max-height: 450px) {
+    .intro {
+      height: auto;
+    }
+  }
+  
+  .gradient-custom {
+    background: radial-gradient(50% 123.47% at 50% 50%, #00FF94 0%, #720059 100%), linear-gradient(121.28deg, #669600 0%, #FF0000 100%), linear-gradient(360deg, #0029FF 0%, #8FFF00 100%), radial-gradient(100% 164.72% at 100% 100%, #6100FF 0%, #00FF57 100%), radial-gradient(100% 148.07% at 0% 0%, #FFF500 0%, #51D500 100%);
+    background-blend-mode: screen, color-dodge, overlay, difference, normal;
+  }
+  
+  .fas.fa-laptop {
+    font-size: 19rem;
+  }
+  
+  @media (max-width: 991px) {
+    .fas.fa-laptop {
+      font-size: 12rem;
+    }
+  };
+
+
+  html,
+body,
+.intro {
+  height: 100%;
+}
+
+.bg-image-vertical {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
+}
+
+
+
+
+/* singup form */
+.intro {
+    height: 100%;
+  }
+  
+  .gradient-custom {
+    /* fallback for old browsers */
+    background: #fa709a;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom right, rgba(250, 112, 154, 1), rgba(254, 225, 64, 1));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom right, rgb(233, 150, 175), rgba(254, 225, 64, 1))
+  }
