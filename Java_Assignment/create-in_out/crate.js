@@ -14,7 +14,7 @@ btn1.addEventListener('click', ()=>{
   .then((userCredential) => {
     // Signed up 
     const user = userCredential.user;
-   
+   window.location.href='index.html'
   })
   .catch((error) => {
     const errorCode = error.code;
