@@ -18,7 +18,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container" style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp')">
+  <div class="container" style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light bg-light navbar fixed-top">
       <div class="container">
@@ -43,7 +43,7 @@
               <a class="nav-link" href="#punjab">Punjab</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#islamabad">islamabad</a>
+              <a class="nav-link" href="#islamabad">Islamabad</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#sindh">Sindh</a>
@@ -55,7 +55,7 @@
               <a class="nav-link" href="#balochistan">Balochistan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#kashmir">kashmir</a>
+              <a class="nav-link" target="_blank" href="#kashmir">Kashmir</a>
             </li>
           </ul>
         </div>
@@ -531,12 +531,11 @@
   <!-- Custom JavaScript -->
   <script>
     // JavaScript to close the navbar when a link is clicked
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        var navbarToggler = document.querySelector('.navbar-toggler');
+    document.querySelectorAll('.nav-link').forEach(function (link) {
+      link.addEventListener('click', function () {
         var navbarCollapse = document.querySelector('.navbar-collapse');
-        if (navbarToggler.getAttribute('aria-expanded') === 'true') {
-          navbarToggler.click();
+        if (navbarCollapse.classList.contains('show')) {
+          navbarCollapse.classList.remove('show');
         }
       });
     });
