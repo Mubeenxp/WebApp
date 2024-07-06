@@ -7,21 +7,23 @@
   <title>QMS</title>
   <!-- MDB icon -->
   <link rel="icon" href="img/cow.ico" type="image/x-icon" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <!-- Google Fonts Roboto -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"rel="stylesheet"/>
   <!-- MDB -->
-  <link rel="stylesheet" href="css/mdb.min.css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.1/mdb.min.css"rel="stylesheet"/>
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container" style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+ 
+  <div class="container "   style="background-color: rgba(72, 95, 95, 0.486);">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light navbar fixed-top">
-      <div class="container">
+    <nav class="navbar navbar-expand-md navbar-light bg-light navbar fixed-top ">
+      <div class="container ">
         <a class="navbar-brand" href="#">
           <img id="logo" src="img/cow.ico" alt="cow">
         </a>
@@ -37,33 +39,60 @@
               <a class="nav-link" href="#pak">Pak</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#karachi">Karachi</a>
+              <a class="nav-link" href="./forms/karachi.html">Karachi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#punjab">Punjab</a>
+              <a class="nav-link" href="./forms/Punjab.html">Punjab</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#islamabad">Islamabad</a>
+              <a class="nav-link" href="./forms/islambad.html">Islamabad</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#sindh">Sindh</a>
+              <a class="nav-link" href="./forms/sindh.html">Sindh</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#kpk">KPK</a>
+              <a class="nav-link" href="./forms/Kpk.html">KPK</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#balochistan">Balochistan</a>
+              <a class="nav-link" href="./forms/Blochistan.html">Balochistan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" target="_blank" href="#kashmir">Kashmir</a>
+              <a class="nav-link" href="./forms/kashmir.html">Kashmir</a>
             </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                data-mdb-dropdown-init
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                aria-expanded="false"
+              >
+                Shubjaat link
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="#jmt">jamiatul Madina</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#mtm">Madrasa tul madina</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#fzm">Faizan e madina</a>
+                </li>
+              </ul>
+            </li>
+            
           </ul>
+          
         </div>
       </div>
     </nav>
     <!-- Main content -->
-    <h1 style="color: aliceblue;">Qms Report</h1>
-    <div class="row">
+   
+    <h1 class="mt-5" style="color: aliceblue; ">Qms Report</h1>
+    <div class="row ">
       <!-- Pakistan -->
       <div class="col-xl-12">
         <div class="thumbnail">
@@ -79,455 +108,102 @@
       <div class="col-xl-12">
         <div class="thumbnail">
           <a href="img/2024 -QMS_page-0002.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0002.jpg" alt="Nature" style="width:100%">
+            <img  src="img/2024 -QMS_page-0002.jpg"  alt="Nature" style="width:100%">
             <div class="caption">
               <h2>Slide 2.</h2>
             </div>
           </a>
         </div>
       </div>
-      <!-- Karachi -->
+
+      <!-- جامعۃ المدینہ -->
       <div class="col-xl-12">
         <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0003.jpg" target="_blank">
-            <img id="karachi"src="img/2024 -QMS_page-0003.jpg" alt="Nature" style="width:100%">
+          <a href="img/2024 -QMS_page-0046.jpg" target="_blank">
+            <img id="jmt"  src="img/2024 -QMS_page-0046.jpg" alt="Nature" style="width:100%">
             <div class="caption">
               <h2>Slide 3.</h2>
             </div>
           </a>
         </div>
       </div>
-      <!-- ******** -->
+      <!-- مدرسۃ المدینہ-->
       <div class="col-xl-12">
         <div class="thumbnail">
-          <a  href="img/2024 -QMS_page-0004.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0004.jpg" alt="Nature" style="width:100%">
+          <a href="img/2024 -QMS_page-0047.jpg" target="_blank">
+            <img id="mtm"  src="img/2024 -QMS_page-0047.jpg" alt="Nature" style="width:100%">
             <div class="caption">
               <h2>Slide 4.</h2>
             </div>
           </a>
         </div>
       </div>
+      <!-- ائمہ مساجد-->
       <div class="col-xl-12">
         <div class="thumbnail">
-          <a  href="img/2024 -QMS_page-0005.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0005.jpg" alt="Nature" style="width:100%">
+          <a href="img/2024 -QMS_page-0048.jpg" target="_blank">
+            <img  src="img/2024 -QMS_page-0048.jpg" alt="Nature" style="width:100%">
             <div class="caption">
               <h2>Slide 5.</h2>
             </div>
           </a>
         </div>
       </div>
+      <!--  فیضان مدینہ -->
       <div class="col-xl-12">
         <div class="thumbnail">
-          <a  href="img/2024 -QMS_page-0006.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0006.jpg" alt="Nature" style="width:100%">
+          <a href="img/2024 -QMS_page-0049.jpg" target="_blank">
+            <img  id="fzm" src="img/2024 -QMS_page-0049.jpg" alt="Nature" style="width:100%">
             <div class="caption">
               <h2>Slide 6.</h2>
             </div>
           </a>
         </div>
       </div>
+      <!--  اجتماعی قربانی -->
       <div class="col-xl-12">
         <div class="thumbnail">
-          <a  href="img/2024 -QMS_page-0007.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0007.jpg" alt="Nature" style="width:100%">
+          <a href="img/2024 -QMS_page-0050.jpg" target="_blank">
+            <img  src="img/2024 -QMS_page-0050.jpg" alt="Nature" style="width:100%">
             <div class="caption">
               <h2>Slide 7.</h2>
             </div>
           </a>
         </div>
       </div>
+      <!--   فیضان آن لائن اکیڈمی -->
       <div class="col-xl-12">
         <div class="thumbnail">
-          <a  href="img/2024 -QMS_page-0008.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0008.jpg" alt="Nature" style="width:100%">
+          <a href="img/2024 -QMS_page-jpg-0051.jpg" target="_blank">
+            <img  src="img/2024 -QMS_page-0051.jpg" alt="Nature" style="width:100%">
             <div class="caption">
               <h2>Slide 8.</h2>
             </div>
           </a>
         </div>
       </div>
+      <!--  اخراجات -->
       <div class="col-xl-12">
         <div class="thumbnail">
-          <a  href="img/2024 -QMS_page-0009.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0009.jpg" alt="Nature" style="width:100%">
+          <a href="img/2024 -QMS_page-0052.jpg" target="_blank">
+            <img  src="img/2024 -QMS_page-0052.jpg" alt="Nature" style="width:100%">
             <div class="caption">
               <h2>Slide 9.</h2>
             </div>
           </a>
         </div>
       </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a  href="img/2024 -QMS_page-0010.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0010.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 10.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a  href="img/2024 -QMS_page-0011.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0011.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 11.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a  href="img/2024 -QMS_page-0012.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0012.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 12.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a  href="img/2024 -QMS_page-0013.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0013.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 13.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a  href="img/2024 -QMS_page-0014.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0014.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 14.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!-- Punjab -->
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0015.jpg" target="_blank">
-            <img id="punjab"src="img/2024 -QMS_page-0015.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 15.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!-- ******** -->
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0016.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0016.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 16.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0017.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0017.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 17.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0018.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0018.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 18.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0019.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0019.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 19.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0020.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0020.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 20.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0021.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0021.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 21.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0022.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0022.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 22.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0023.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0023.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 23.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0024.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0024.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 24.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0025.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0025.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 25.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!-- islambad -->
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0026.jpg" target="_blank">
-            <img  id="islamabad"src="img/2024 -QMS_page-0026.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 26.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!-- ******** -->
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0027.jpg" target="_blank">
-            <img src="img/2024 -QMS_page-0027.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 27.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0028.jpg" target="_blank">
-            <img src="img/2024 -QMS_page-0028.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 28.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!-- sindh -->
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0029.jpg" target="_blank">
-            <img id="sindh" src="img/2024 -QMS_page-0029.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 29.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!-- ******** -->
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0030.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0030.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 30.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0031.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0031.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 31.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0032.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0032.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 32.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0033.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0033.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 33.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0034.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0034.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 34.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0035.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0035.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 35.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0036.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0036.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 36.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!-- Kpk -->
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0037.jpg" target="_blank">
-            <img id="kpk" src="img/2024 -QMS_page-0037.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 37.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!-- ******** -->
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0038.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0038.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 38.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0039.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0039.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 39.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!-- Blochistan -->
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0040.jpg" target="_blank">
-            <img id="balochistan" src="img/2024 -QMS_page-0040.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 40.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!-- ******** -->
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0041.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0041.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 41.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0042.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0042.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 42.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!-- kashmir -->
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0043.jpg" target="_blank">
-            <img id="kashmir"src="img/2024 -QMS_page-0043.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 43.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!-- ******** -->
-      <div class="col-xl-12">
-        <div class="thumbnail">
-          <a href="img/2024 -QMS_page-0044.jpg" target="_blank">
-            <img src="img/2024 -QMS_page-0044.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <h2>Slide 44.</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!-- ******** -->
+     
+      
+     
     </div>
   </div>
 
   <!-- Bootstrap JavaScript and dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-
+ <!-- MDB -->
+<script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.1/mdb.umd.min.js"></script>
   <!-- Custom JavaScript -->
   <script>
     // JavaScript to close the navbar when a link is clicked
@@ -539,6 +215,13 @@
         }
       });
     });
+
+    // Initialization for ES Users
+import { Dropdown, initMDB } from "mdb-ui-kit";
+
+initMDB({ Dropdown });
+ 
   </script>
+  <script src="qms"></script>
 </body>
 </html>
